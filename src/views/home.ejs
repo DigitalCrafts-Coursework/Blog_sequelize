@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h2>home</h2>
+    <h1>Learn coding with Kermit</h1>
+    <h3>A blog for amphibians who like to code</h3>
+    <main>
+      <div class="latest-posts">
+        <h2>Latest posts</h2>
+        <% blogPosts.forEach(post => { %>
+        <div class="post-entree">
+          <div class="date"><%= post.createdAt %></div>
+          <div class="title"><%= post.title %></div>
+          <div><%= post.post %></div>
+        </div>
+        <% }) %>
+      </div>
+    </main>
+    <div class="sidebar">
+      <h3>For Kermit's eyes only</h3>
+      <div class="write-post">
+        <a href="http://localhost:3000/newpost" class="">click here</a>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
   </body>
 </html>

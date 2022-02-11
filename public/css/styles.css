@@ -1,0 +1,14 @@
+h1 {
+  color: rgb(45, 201, 94);
+}
+
+.post-entree {
+  margin-top: 1em;
+  width: 30%;
+  border: greenyellow 2px solid;
+  border-radius: 0.2em;
+}
+
+.title {
+  background: rgb(172, 212, 172);
+}
